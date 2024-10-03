@@ -1,0 +1,21 @@
+
+.titulop{
+
+    font-size: x-large;  
+}
+
+.textonormal{
+
+    font-size: medium;
+}
+
+
+.caja{
+    color: rgb(247, 237, 237);
+    font-family: Arial, sans-serif;
+    background-color: #13124b; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 10px 10px 10px #201f57; 
+}
+

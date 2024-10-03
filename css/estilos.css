@@ -4,15 +4,16 @@ body {
     color: #333;
 }
 
-h1 {
-    color: #020003;
-}
-#titulo1 {
-    color: #2aadd4; /* Color específico para el título 1 */
-    font-size: 2em; /* Tamaño de fuente específico para el título 1 */
+h1{
+    color: #333;
 }
 
-#titulo2 {
-    color: #8eda14; /* Color específico para el título 2 */
-    font-size: 1.5em; /* Tamaño de fuente específico para el título 2 */
+.principal{
+    color: #9e9c2d; 
+    font-size: 1.5em; 
+}
+
+#titulo1 {
+    color: #2aadd4; 
+    font-size: 2em; 
 }
