@@ -18,6 +18,8 @@
     padding: 20px; 
     box-shadow: 10px 10px 10px #39386e; 
     margin-bottom: 30px;
+    justify-content: center; 
+    align-items: center;
 }
 
 .contenedor{
@@ -27,7 +29,11 @@
     align-items: center;
 }
 
-
+.gcontenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
 
 .caja2{
     margin-right: 20px;
@@ -38,5 +44,7 @@
     background-color: #151394; 
     border-radius: 15px; 
     padding: 20px; 
-    box-shadow: 10px 10px 10px #0032d8; 
+    box-shadow: 10px 10px 10px #0032d8;
+    justify-content: center; 
+    align-items: center; 
 }
