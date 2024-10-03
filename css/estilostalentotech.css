@@ -13,9 +13,30 @@
 .caja{
     color: rgb(247, 237, 237);
     font-family: Arial, sans-serif;
-    background-color: #13124b; 
+    background-color: #19193d; 
     border-radius: 15px; 
     padding: 20px; 
-    box-shadow: 10px 10px 10px #201f57; 
+    box-shadow: 10px 10px 10px #39386e; 
+    margin-bottom: 30px;
 }
 
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+.caja2{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    background-color: #151394; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 10px 10px 10px #0032d8; 
+}
