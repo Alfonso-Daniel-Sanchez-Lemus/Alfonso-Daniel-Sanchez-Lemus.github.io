@@ -1,16 +1,12 @@
-
-.titulop{
-
+.titulop {
     font-size: x-large;  
 }
 
-.textonormal{
-
+.textonormal {
     font-size: medium;
 }
 
-
-.caja{
+.caja {
     color: rgb(247, 237, 237);
     font-family: Arial, sans-serif;
     background-color: #19193d; 
@@ -18,34 +14,72 @@
     padding: 20px; 
     box-shadow: 10px 10px 10px #39386e; 
     margin-bottom: 30px;
-    justify-content: center; 
-    align-items: center;
+    max-width: 100%; /* Asegura que la caja no exceda el ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
-.contenedor{
+.contenedor {
     display: flex;
-    justify-content: space-around;
-    justify-content: center; 
-    align-items: center;
+    align-items: flex-start; /* Alinear elementos en la parte superior */
 }
 
-.gcontenedor{
+.contenedor img {
+    max-width: 50%; /* Imagen ocupa hasta el 50% del contenedor */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Esquinas redondeadas en la imagen */
+}
+
+.gcontenedor {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en computadoras */
+    gap: 10px; /* Espacio entre elementos */
 }
 
-.caja2{
-    margin-right: 20px;
-    margin-bottom: 30px;
-    width: 350px;
-    height: 500px;
-    color: rgb(0, 0, 0);
+.caja2 {
+    margin: 10px; /* Margen uniforme */
     background-color: #151394; 
     border-radius: 15px; 
     padding: 20px; 
     box-shadow: 10px 10px 10px #0032d8;
-    justify-content: center; 
-    align-items: center; 
+    display: flex; /* Para centrar contenido */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    justify-content: flex-start; /* Alinear al inicio */
+    align-items: center; /* Centrar horizontalmente */
 }
+
+.caja2 img {
+    width: 100%; /* Ancho del 100% */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas en la imagen */
+}
+
+@media(max-width: 600px) {
+    .contenedor {
+        flex-direction: column; /* Cambia a columna en móviles */
+        align-items: center; /* Centrar en móviles */
+    }
+
+    .gcontenedor {
+        grid-template-columns: 1fr;
+        align-items: center; /* 1 columna en móviles */
+    }
+    .titulop {
+        font-size: large; /* Ajustar tamaño de fuente */
+    }
+
+    .textonormal {
+        font-size: small; /* Ajustar tamaño de fuente */
+    }
+
+    .caja {
+        padding: 15px; /* Ajustar padding */
+        margin-bottom: 20px; /* Ajustar margen inferior */
+    }
+
+    .caja2 {
+        margin: 5px; /* Reducir margen */
+        padding: 15px; /* Ajustar padding */
+    }
+}
+
+
