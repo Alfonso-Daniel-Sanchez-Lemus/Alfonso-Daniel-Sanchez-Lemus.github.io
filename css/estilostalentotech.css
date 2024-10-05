@@ -62,6 +62,11 @@ body{
         flex-direction: column; 
         align-items: center; 
     }
+    .contenedor img {
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 10px; 
+    }
 
     .gcontenedor {
         grid-template-columns: repeat(2, 1fr);  
@@ -85,33 +90,14 @@ body{
         padding: 15px; 
     }
 
-    @media(max-width: 600px) {
-        .contenedor {
-            flex-direction: column; 
-            align-items: center; 
-        }
-
-        .gcontenedor {
-            grid-template-columns: 1fr;
-            align-items: center; 
-        }
-        .titulop {
-            font-size: large; 
-        }
-
-        .textonormal {
-            font-size: small; 
-        }
-
-        .caja {
-            padding: 15px; 
-            margin-bottom: 20px; 
-        }
-
-        .caja2 {
-            margin: 5px; 
-            padding: 15px; 
-        }
-    }
+    
 }
 
+@media(max-width: 600px) {
+
+    .gcontenedor {
+        grid-template-columns: 1fr;
+        align-items: center; 
+    }
+
+}
