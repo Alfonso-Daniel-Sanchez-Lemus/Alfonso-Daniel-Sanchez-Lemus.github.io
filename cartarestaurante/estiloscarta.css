@@ -49,10 +49,18 @@
 #titulohoja2{
     font-size: 40px;
     color:#ffbadb;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 0px;
     margin-left: 100px;
 }
+#titulohoja2b{
+    font-size: 40px;
+    color:#ffbadb;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+}
+
 
 .fondogris{
     margin-top: 15px;       
