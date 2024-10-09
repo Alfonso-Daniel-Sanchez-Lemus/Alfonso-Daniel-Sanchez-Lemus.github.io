@@ -147,11 +147,86 @@ a {
     margin: 0;
 }
 
+/*   aqui comienza la parte de los postres     */
 
+#textwhite{
+    color: whitesmoke;
+}
+
+.fondopostres{
+    background-image: url(../proyecto1/imagenescarta/fondopostre.jpg);
+    display: flex;
+    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+    align-items: center; /* Alinea horizontalmente */
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+.titulopostre{
+    margin-top: 15px; /* Elimina el margen superior e inferior */
+    padding: 0; /* Elimina cualquier padding si lo hay */
+    color: #554e3a;
+    font-size: 100px;
+    text-align: center; /* Centra el texto */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+.gcontenedorpostre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas */
+    gap: 40px; /* Espacio entre las cajas */
+    width: 90%; /* Asegura que ocupe el 100% del ancho disponible */
+    padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+}
+
+.cajapostre {
+    background-color: #3c2c0e2d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #37250b34;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.15s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajapostre:hover {
+    transform: scale(1.1); /* Agranda la caja al pasar el ratón */
+}
+
+.cajapostre img {
+    width: 80%; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
 
 
 
 /* se usa en todo practicamente*/
+
+.back{
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(235, 228, 183);
+    width: auto;
+    height: 20px;
+    margin:10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
 
 .im-fell-french-canon-regular {
     font-family: "IM Fell French Canon", serif;
@@ -196,7 +271,21 @@ a {
     .cajaplato {
         padding: 10px;
     }
+
+    .titulopostre{
+        font-size: 60px;
+    }
     
+    .gcontenedorpostre {
+        grid-template-columns: repeat(2, 1fr); /* Divide en 3 columnas */
+        gap: 20px; /* Espacio entre las cajas */
+        width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
+        padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+    }
+    
+    .cajapostre {
+        padding: 10px;
+    }
 
 
 
@@ -233,7 +322,16 @@ a {
         width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
         padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
     }
+    .titulopostre{
+        font-size: 50px;
+    }
     
+    .gcontenedorpostre {
+        grid-template-columns: repeat(1, 1fr); /* Divide en 3 columnas */
+        gap: 10px; /* Espacio entre las cajas */
+        width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
+        padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+    }
 
 
 }
