@@ -35,7 +35,7 @@
 
 .gcontenedor {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Divide en 4 columnas */
+    grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
     gap: 40px; /* Espacio entre las cajas */
     width: 60%; /* Asegura que ocupe el 100% del ancho disponible */
     padding: 0px; /* Añade algo de padding para no pegar los elementos a los bordes */
@@ -58,7 +58,7 @@
 }
 
 .cajaopc img {
-    width: 150px; /* Aumenta el tamaño de las imágenes */
+    width: 160px; /* Aumenta el tamaño de las imágenes */
     height: auto;
     border-radius: 15px;
 }
@@ -74,6 +74,77 @@ a {
     margin: 0;
 }
 
+
+
+  
+/*   Desde aqui comienza la parte de platos fuertes    */
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.fondoplatosfuertes {
+    background-image: url(../proyecto1/imagenescarta/fondoplatos.jpg);
+    width: 100%;
+    height: 140vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente */
+    margin: 0;
+}
+
+
+.titulopf{
+    color: #000;
+    font-size: 100px;
+    justify-content: center; /* Centra horizontalmente */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+.gcontenedorplato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas */
+    gap: 40px; /* Espacio entre las cajas */
+    width: 90%; /* Asegura que ocupe el 100% del ancho disponible */
+    padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+}
+
+.cajaplato {
+    background-color: #fcb8392d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #faa93034;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.15s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajaplato:hover {
+    transform: scale(1.1); /* Agranda la caja al pasar el ratón */
+}
+
+.cajaplato img {
+    width: 80%; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* se usa en todo practicamente*/
 
 .im-fell-french-canon-regular {
     font-family: "IM Fell French Canon", serif;
@@ -94,7 +165,6 @@ a {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
   }
-  
 
 
 @media (max-width:800px) {
