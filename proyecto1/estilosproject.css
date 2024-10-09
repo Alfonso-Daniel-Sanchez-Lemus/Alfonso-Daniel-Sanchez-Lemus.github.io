@@ -87,22 +87,25 @@ a {
 
 .fondoplatosfuertes {
     background-image: url(../proyecto1/imagenescarta/fondoplatos.jpg);
+    display: flex;
+    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+    align-items: center; /* Alinea horizontalmente */
     width: 100%;
     height: 140vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente */
     margin: 0;
+
 }
 
 
 .titulopf{
+    margin-top: 15px; /* Elimina el margen superior e inferior */
+    padding: 0; /* Elimina cualquier padding si lo hay */
     color: #000;
     font-size: 100px;
-    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
     text-shadow: 
     2px 2px 0px white,  /* Sombra abajo-derecha */
     -2px -2px 0px white, /* Sombra arriba-izquierda */
