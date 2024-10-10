@@ -113,7 +113,7 @@ a {
 .fondoplatosfuertes {
     background-image: url(../proyecto1/imagenescarta/fondoplatos.jpg);
     display: flex;
-    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    flex-direction: column; 
     justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
     align-items: center; /* Alinea horizontalmente */
     width: auto;
@@ -126,7 +126,7 @@ a {
 
 
 .titulopf{
-    margin-top: 15px; /* Elimina el margen superior e inferior */
+    margin-top: 15px; 
     padding: 0; /* Elimina cualquier padding si lo hay */
     color: #000;
     font-size: 100px;
@@ -181,7 +181,7 @@ a {
 .fondopostres{
     background-image: url(../proyecto1/imagenescarta/fondopostre.jpg);
     display: flex;
-    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    flex-direction: column; 
     justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
     align-items: center; /* Alinea horizontalmente */
     width: auto;
@@ -194,7 +194,7 @@ a {
 
 
 .titulopostre{
-    margin-top: 15px; /* Elimina el margen superior e inferior */
+    margin-top: 15px;
     padding: 0; /* Elimina cualquier padding si lo hay */
     color: #554e3a;
     font-size: 100px;
@@ -234,7 +234,7 @@ a {
 .fondococteles{
     background-image: url(../proyecto1/imagenescarta/fondococteles.jpg);
     display: flex;
-    flex-direction: column; /* Asegúrate de apilar los hijos verticalmente */
+    flex-direction: column; 
     justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
     align-items: center; /* Alinea horizontalmente */
     width: auto;
@@ -247,7 +247,7 @@ a {
 
 
 .titulococteles{
-    margin-top: 15px; /* Elimina el margen superior e inferior */
+    margin-top: 15px; 
     padding: 0; /* Elimina cualquier padding si lo hay */
     color: #3a553c;
     font-size: 100px;
@@ -398,7 +398,7 @@ a {
     }
     
     .gcontenedorproductos {
-        grid-template-columns: repeat(2, 1fr); /* Divide en 3 columnas */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 20px; /* Espacio entre las cajas */
         width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
         padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
@@ -457,7 +457,7 @@ a {
     .gcontenedor {
         margin-bottom: 10px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Divide en 4 columnas */
+        grid-template-columns: repeat(1, 1fr); 
         gap: 10px; /* Espacio entre las cajas */
         width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
         padding: 0px; /* Añade algo de padding para no pegar los elementos a los bordes */
@@ -468,7 +468,7 @@ a {
     }
     
     .gcontenedorproductos {
-        grid-template-columns: repeat(1, 1fr); /* Divide en 3 columnas */
+        grid-template-columns: repeat(1, 1fr); 
         gap: 10px; /* Espacio entre las cajas */
         width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
         padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
