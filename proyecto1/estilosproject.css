@@ -1,22 +1,47 @@
 /* Contenedor principal que ocupa toda la pantalla */
+
 .fondoprincipal {
-    background-image: url(../proyecto1/imagenescarta/fondoprincipal.png);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin: 0;
+        background-image: url(../proyecto1/imagenescarta/fondoprincipal.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        margin: 0;
 }
 
 .logo {
     width: 40%; /* Ajusta al 40% del ancho */
     height: auto;
     cursor: pointer;
-
+    display: block; /* Asegura que sea tratado como un bloque */
 }
+
+.logo:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    transition: transform 0.3s ease;
+}
+.menu {
+    border-radius: 10px;
+    background-color: rgba(196, 192, 172, 0.205);
+    width: auto;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: block; /* Asegura que el <h1> sea tratado como un bloque */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+
 
 
 /*   aqui comienza la parte de las opciones       */
@@ -408,6 +433,9 @@ a {
     }
     .contenedor img {
         max-width: 45%; 
+    }
+    .menu h1{
+        font-size: 50px;
     }
 
 
