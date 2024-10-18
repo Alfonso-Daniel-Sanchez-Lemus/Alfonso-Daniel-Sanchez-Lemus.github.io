@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 0, 0, 0.925);
+    background-color: rgba(187, 146, 12, 0.925);
     color: whitesmoke;
     font-family: Arial, sans-serif;
     font-size: medium;
@@ -60,7 +60,7 @@ body{
 }
 .cajar{
     border-radius: 10px;
-    background-color: #2e2e2e; 
+    background-color: #ca780d; 
     padding: 20px; 
     width: 100%;
     box-shadow: 5px 5px 5px #5050503b; 

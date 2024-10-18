@@ -1,0 +1,43 @@
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="cajacentral">
+        <input type="text" class="oscuro2" id="operacion" disabled>
+        <input type="text" class="oscuro" id="calculof" disabled>
+        
+        <div class="grid">
+            <!--fila 1-->
+            <p class="numeroyoperaciones" onclick="numero(7)">7</P>
+            <P class="numeroyoperaciones" onclick="numero(8)">8</P>
+            <P class="numeroyoperaciones" onclick="numero(9)">9</P>    
+            <P class="numeroyoperaciones" onclick="operacion('multiplicar')">X</P>
+            <!--fila 2-->
+            <P class="numeroyoperaciones" onclick="numero(4)">4</P>
+            <P class="numeroyoperaciones" onclick="numero(5)">5</P>
+            <P class="numeroyoperaciones" onclick="numero(6)">6</P>
+            <P class="numeroyoperaciones" onclick="operacion('restar')">-</P>
+            <!--fila 3-->
+            <P class="numeroyoperaciones" onclick="numero(1)">1</P>
+            <P class="numeroyoperaciones" onclick="numero(2)">2</P>
+            <P class="numeroyoperaciones" onclick="numero(3)">3</P>
+            <P class="numeroyoperaciones" onclick="operacion('sumar')">+</P>
+            <!--fila 4-->
+            <P class="numeroyoperaciones" onclick="punto()">.</P>
+            <p class="numeroyoperaciones" onclick="numero(0)">0</p>
+            <P class="numeroyoperaciones" onclick="operacion('ac')">AC</P>
+            <P class="numeroyoperaciones" onclick="operacion('dividir')">/</P>
+            
+        </div>
+        <p class="cajar" onclick="respuesta()">=</p>
+        
+
+    </div>
+    
+    <script src="js/cf.js"></script>
+</body>
+</html>
