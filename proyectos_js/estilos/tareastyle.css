@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(253, 190, 15);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.contenedor{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+
+}
+input{
+    border-radius: 8px;
+    background-color: rgb(235, 233, 233);
+}
+button{ 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.caja_menu{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cajaspequeñas{
+    background-color: rgb(187, 187, 187);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px black;
+}
