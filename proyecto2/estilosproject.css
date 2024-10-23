@@ -1,0 +1,553 @@
+/* Contenedor principal que ocupa toda la pantalla */
+
+.fondoprincipal {
+        background-image: url(../proyecto1/imagenescarta/fondoprincipal.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        margin: 0;
+}
+
+.logo {
+    width: 40%; /* Ajusta al 40% del ancho */
+    height: auto;
+    cursor: pointer;
+    display: block; /* Asegura que sea tratado como un bloque */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    transition: transform 0.3s ease;
+}
+.menu {
+    border-radius: 10px;
+    background-color: rgba(196, 192, 172, 0.205);
+    width: auto;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: block; /* Asegura que el <h1> sea tratado como un bloque */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+
+/* opcion de incio o registro */
+
+.botoninore{
+    background-color: #a79f748f;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: block;
+    
+}
+.botoninore:hover{
+    transform: scale(1.2);
+    transition: transform 0.3 ease;
+}
+
+
+.container {
+    background: rgba(235, 225, 169, 0.425);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+
+/*   aqui comienza la parte de las opciones       */
+
+.fondoopciones {
+    background-image: url(../proyecto1/imagenescarta/fondoopciones.png);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0;
+}
+
+.gcontenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas */
+    width: 50%;
+    padding: 0px; /* Añade algo de padding para no pegar los elementos a los bordes */
+}
+
+.cajaopc {
+    background-color: #fcf39e2d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #d3cb8434;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajaopc:hover {
+    transform: scale(1.05); /* Agranda la caja al pasar el ratón */
+}
+
+.cajaopc img {
+    width: 160px; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
+a {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Color del texto */
+}
+
+.margin0{
+    margin: 0;
+}
+
+
+
+  
+/*   Desde aqui comienza la parte de platos fuertes    */
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.fondoplatosfuertes {
+    background-image: url(../proyecto1/imagenescarta/fondoplatos.jpg);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+    align-items: center; /* Alinea horizontalmente */
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+.titulopf{
+    margin-top: 15px; 
+    padding: 0; /* Elimina cualquier padding si lo hay */
+    color: #000;
+    font-size: 100px;
+    text-align: center; /* Centra el texto */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+.gcontenedorproductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas */
+    gap: 40px; /* Espacio entre las cajas */
+    width: 90%; /* Asegura que ocupe el 100% del ancho disponible */
+    padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+}
+
+.cajaplato {
+    background-color: #fcb8392d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #faa93034;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.15s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajaplato:hover {
+    transform: scale(1.1); /* Agranda la caja al pasar el ratón */
+}
+
+.cajaplato img {
+    width: 80%; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
+
+#bordeblanco{
+    margin: 0;
+}
+
+/*   aqui comienza la parte de los postres     */
+
+#textwhite{
+    color: whitesmoke;
+}
+
+.fondopostres{
+    background-image: url(../proyecto1/imagenescarta/fondopostre.jpg);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+    align-items: center; /* Alinea horizontalmente */
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+.titulopostre{
+    margin-top: 15px;
+    padding: 0; /* Elimina cualquier padding si lo hay */
+    color: #554e3a;
+    font-size: 100px;
+    text-align: center; /* Centra el texto */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+
+
+.cajapostre {
+    background-color: #3c2c0e2d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #37250b34;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.15s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajapostre:hover {
+    transform: scale(1.1); /* Agranda la caja al pasar el ratón */
+}
+
+.cajapostre img {
+    width: 80%; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* comienza la parte de los cocteles*/
+.fondococteles{
+    background-image: url(../proyecto1/imagenescarta/fondococteles.jpg);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+    align-items: center; /* Alinea horizontalmente */
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+.titulococteles{
+    margin-top: 15px; 
+    padding: 0; /* Elimina cualquier padding si lo hay */
+    color: #3a553c;
+    font-size: 100px;
+    text-align: center; /* Centra el texto */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+
+.cajacocteles {
+    background-color: #0e0f3c2d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #0b103734;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.15s ease; /* Añade un pequeño efecto al pasar el ratón */
+}
+
+.cajacocteles:hover {
+    transform: scale(1.1); /* Agranda la caja al pasar el ratón */
+}
+
+.cajacocteles img {
+    width: 80%; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* parte de conocenos*/
+
+.fondoconocenos{
+        display: flex;
+        margin: 10px;
+        background: radial-gradient(circle, #313131 0%, #1c1b1b 100%);
+        height: 100%;
+        width: auto;
+        margin: 0;
+        flex-direction: column; 
+        justify-content: flex-start; /* Cambia a flex-start para que empiece desde arriba */
+        align-items: center; /* Alinea horizontalmente */
+        border-radius: 20px; 
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a090951;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+
+
+.contenedor img {
+    max-width: 30%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.contenedor h2 {
+    font-size: 24px; /* Tamaño normal del título */
+}
+
+.contenedor p {
+    font-size: 18px; /* Tamaño normal del texto */
+}
+
+.tituloconocenos{
+    margin-top: 15px; /* Elimina el margen superior e inferior */
+    padding: 0; /* Elimina cualquier padding si lo hay */
+    color: #181c21;
+    font-size: 100px;
+    text-align: center; /* Centra el texto */
+    text-shadow: 
+    2px 2px 0px white,  /* Sombra abajo-derecha */
+    -2px -2px 0px white, /* Sombra arriba-izquierda */
+    -2px 2px 0px white,  /* Sombra abajo-izquierda */
+    2px -2px 0px white;  /* Sombra arriba-derecha */
+}
+
+.mapas{
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+/* se usa en todo practicamente*/
+
+.back{
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(235, 228, 183);
+    width: auto;
+    height: 20px;
+    margin:10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.im-fell-french-canon-regular {
+    font-family: "IM Fell French Canon", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .im-fell-french-canon-regular-italic {
+    font-family: "IM Fell French Canon", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+
+@media (max-width:800px) {
+    .logo {
+        width: 60%; /* Ajusta al 40% del ancho */
+        height: auto;
+        cursor: pointer;
+    
+    }
+
+    .titulopf{
+        font-size: 60px;
+    }
+    
+    .gcontenedorproductos {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; /* Espacio entre las cajas */
+        width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
+        padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+    }
+    
+    .cajaplato {
+        padding: 10px;
+    }
+
+    .titulopostre{
+        font-size: 60px;
+    }
+    .titulococteles{
+        font-size: 60px;
+    }
+    .tituloconocenos{
+        font-size: 60px;
+    }
+    
+    .cajapostre {
+        padding: 10px;
+    }
+    .cajacocteles {
+        padding: 10px;
+    }
+    .contenedor h2 {
+        font-size: 17px; 
+    }
+    
+    .contenedor p {
+        font-size: 12px; 
+    }
+    .contenedor img {
+        max-width: 45%; 
+    }
+    .menu h1{
+        font-size: 50px;
+    }
+
+
+
+}
+
+@media (max-width:600px) {
+    .fondoopciones {
+        background-image: url(../proyecto1/imagenescarta/fondoopciones.png);
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        margin: 0;
+    }
+    .gcontenedor {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 10px; /* Espacio entre las cajas */
+        width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
+        padding: 0px; /* Añade algo de padding para no pegar los elementos a los bordes */
+    }
+    
+    .titulopf{
+        font-size: 50px;
+    }
+    
+    .gcontenedorproductos {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 10px; /* Espacio entre las cajas */
+        width: 80%; /* Asegura que ocupe el 100% del ancho disponible */
+        padding: 5px; /* Añade algo de padding para no pegar los elementos a los bordes */
+    }
+    .titulopostre{
+        font-size: 50px;
+    }
+    .titulococteles{
+        font-size: 50px;
+    }
+    .tituloconocenos{
+        font-size: 50px;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opciones de carta</title>
+    <link rel="stylesheet" href="estilosproject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fondoopciones">
+        <div class="container">
+            <h1>Inicio de sesión</h1>
+            <form onsubmit="registrarse(event)" id="form">
+                
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <button type="submit">Login</button>
+                
+            </form>
+            <a href="inore.html"><button type="submit">atras</button></a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html> 
