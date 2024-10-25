@@ -16,53 +16,34 @@ function registrarse(event) {
         alert("Las contraseñas deben ser iguales");
         return;
     }
+
+    // Crea un objeto persona
+    let persona = {
+        nombre: nombre,
+        apellido: apellido,
+        email: email,
+        password: password
+    };
+
     if (usuariosGuardados) {
-        let usuarios = JSON.parse(usuariosGuardados);
-        let existeCorreo = usuarios.some(usuario => usuario.email === email);
+        listaUsuarios = JSON.parse(usuariosGuardados);
+        let existeCorreo = listaUsuarios.some(usuario => usuario.email === email);
 
         if (existeCorreo) {
             alert("El correo electrónico ya posee una cuenta");
             return;
         }
-        else{
-            // Crea un objeto persona
-            let persona = {
-                nombre: nombre,
-                apellido: apellido,
-                email: email,
-                password: password
-            };
-
-            // Añade el nuevo usuario a la lista
-            listaUsuarios.push(persona);
-            console.log(listaUsuarios);
-
-            // Guarda la lista de usuarios en localStorage
-            localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
-            alert("Usuario registrado");
-
-
-        }
     }
-    else if(!usuariosGuardados){ // Crea un objeto persona
-        let persona = {
-            nombre: nombre,
-            apellido: apellido,
-            email: email,
-            password: password
-        };
-    
-        // Añade el nuevo usuario a la lista
-        listaUsuarios.push(persona);
-        console.log(listaUsuarios);
-    
-        // Guarda la lista de usuarios en localStorage
-        localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
-        alert("Usuario registrado");
-        
-    }
-   
+
+    // Añade el nuevo usuario a la lista
+    listaUsuarios.push(persona);
+    console.log(listaUsuarios);
+
+    // Guarda la lista de usuarios en localStorage
+    localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
+    alert("Usuario registrado");
 }
+
 function verify() {
     const usuariosGuardados = localStorage.getItem("usuarios");
 
@@ -70,4 +51,9 @@ function verify() {
         listaUsuarios = JSON.parse(usuariosGuardados);
     }
 }
-window.onload = verify;
+
+// Añade el listener de evento al cargar la página
+window.onload = function() {
+    verify();
+    document.getElementById("form").addEventListener("submit", registrarse);
+};

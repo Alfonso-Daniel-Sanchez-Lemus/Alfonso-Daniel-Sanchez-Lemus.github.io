@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>opciones de carta</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="estilosproject.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <div class="fondoopciones">
         <div class="container">
             <h1>Registro de Usuario</h1>
-            <form onsubmit="registrarse(event)" id="form">
+            <form id="form">
                 <div class="form-group">
                     <label for="nombre">Nombres</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -35,12 +35,13 @@
                     <input type="password" id="repite-contrasena" name="repite-contrasena" required>
                 </div>
                 <button type="submit">Registrarse</button>
-                
             </form>
-            <a href="inore.html"><button type="submit">atras</button></a>
+            <a href="inore.html">
+                <button type="button">Atrás</button>
+            </a>
         </div>
     </div>
         
-    <script src="js/registro.js"></script>
+    <script src="registro.js"></script>
 </body>
 </html>

@@ -1,34 +1,39 @@
-let logeado = 0
+function iniciarSesion(event) {
+    event.preventDefault(); // Evita que la página se recargue
 
-listaUsuarios = []
-function ingresar(){
-    let listaUsuarios = JSON.parse(localStorage.getItem("usuario"))
-    //console.log(listaUsuarios)
+    const emailIngresado = document.getElementById("correo").value;
+    const passwordIngresada = document.getElementById("contrasena").value;
 
-}
+    // Recupera la lista de usuarios del localStorage
+    const usuariosGuardados = localStorage.getItem("usuarios");
 
-function verificarLogin(event){
-    event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
-    let listaUsuarios = JSON.parse(localStorage.getItem("usuario"))
-    let email = document.getElementById("correo").value
-    let password = document.getElementById("contrasena").value
-
-    for(let i =0; i<listaUsuarios.length;i++){
-        //console.log(listaUsuarios[i].nombre)
-        let usuario = JSON.parse(listaUsuarios[i])
-        console.log(usuario.email)
-        if(email == usuario.email && password == usuario.password){
-            alert("el usuario ingreso correctamente")
-            logeado=1
-        }
-
-      
+    if (!usuariosGuardados) {
+        alert("No hay usuarios registrados");
+        return;
     }
 
-    if(logeado){
-        window.location.href = "opciones.html"
-    }else{
-        alert("el usuario o clave incorrecta")
+    const listaUsuarios = JSON.parse(usuariosGuardados);
+
+    // Busca al usuario con el correo ingresado
+    const usuarioEncontrado = listaUsuarios.find(usuario => usuario.email === emailIngresado);
+
+    if (!usuarioEncontrado) {
+        alert("Correo electrónico no registrado");
+        return;
     }
 
+    // Verifica la contraseña
+    if (usuarioEncontrado.password !== passwordIngresada) {
+        alert("Contraseña incorrecta");
+        return;
+    }
+
+    
+    window.location.href = "opciones.html";
+    // Aquí puedes redirigir al usuario a otra página o realizar alguna acción
 }
+
+// Añade el listener para el evento submit del formulario de inicio de sesión
+window.onload = function() {
+    document.getElementById("form").addEventListener("submit", iniciarSesion);
+};
