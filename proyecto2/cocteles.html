@@ -20,38 +20,61 @@
                     <img src="imagenescarta/pinacolada.jpg" alt="PIÑA COLADA">
                     <p id="bordeblanco"><b>PIÑA COLADA</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$20.0000</b></p>   <!--Se define otro tipo de letra para los numero para que se entiendan un poco mejor-->
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Piña colada', 20000, this)">+</div></div>
                 </div> 
                 <div class="cajacocteles">
                     <img src="imagenescarta/margarita.jpg" alt="MARGARITA">
                     <p id="bordeblanco"><b>MARGARITA</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$22.000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Margarita', 22000, this)">+</div></div>
                 </div>
                 <div class="cajacocteles">
                     <img src="imagenescarta/daiquiri.jpg" alt="daiquiri">
                     <p id="bordeblanco"><b>DAIQUIRI</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$23.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Daiquiri', 23000, this)">+</div></div>
                 </div>
                 <div class="cajacocteles">
                     <img src="imagenescarta/gintonic.jpg" alt="GINTONIC">
                     <p id="bordeblanco"><b>GIN TONIC</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$25.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('GinTonic', 25000, this)">+</div></div>
                 </div>
                 <div class="cajacocteles">
                     <img src="imagenescarta/cosmopolitan.jpg" alt="Cosmopolitan">
                     <p id="bordeblanco"><b>COSMOPOLITAN</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$28.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Cosmopolitan', 28000, this)">+</div></div>
                 </div>
                 <div class="cajacocteles">
                     <img src="imagenescarta/mojito.jpg" alt="Mojito">
                     <p id="bordeblanco"><b>MOJITO</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$24.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Mojito', 24000, this)">+</div></div>
                 </div>
                  
             </div>
-            <a href="opciones.html"><h1 class="back">atras</h1></a> <!-- simplemente para regresar a la parte de opciones por si la persona quier ver otras cosas del menu o abrir conocenos-->
+          <!-- Ícono del carrito -->
+          <div id="carritoIcono" onclick="mostrarCarrito()">
+            🛒
         </div>
-    </div>
+
+        <div id="carritoPopup" class="popup" onclick="cerrarCarrito()">
+            <div class="popup-content" onclick="event.stopPropagation();"> <!-- Detiene el evento de cierre al hacer clic en el contenido -->
+                <span class="close" onclick="cerrarCarrito()">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="carritoContenido">
+                    <!-- Productos del carrito se mostrarán aquí -->
+                </div>
+            </div>
+        </div>
+        
+        
+    <a href="opciones.html"><h1 class="back">atras</h1></a>     <!-- simplemente para regresar a la parte de opciones por si la persona quier ver otras cosas del menu o abrir conocenos-->
     
+</div>
+</div>
+<script src="carrito.js"></script>
 </body>
 </html>
             

@@ -1,5 +1,6 @@
 // Recuperar carrito de localStorage si existe
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+let cc=0;
 
 // Función para agregar productos al carrito y guardarlo en localStorage
 function agregarAlCarrito(nombre, precio, boton) {
@@ -16,6 +17,7 @@ function agregarAlCarrito(nombre, precio, boton) {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 
     actualizarCarrito();
+    document.getElementById("cantidadproducto").value = 0
 }
 
 // Función para actualizar el carrito y mostrar la suma total

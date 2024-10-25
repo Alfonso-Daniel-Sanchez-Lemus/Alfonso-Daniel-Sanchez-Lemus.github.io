@@ -20,37 +20,59 @@
                     <img src="imagenescarta/tortachocolate.jpg" alt="TORTA DE CHOCOLATE">
                     <p id="bordeblanco"><b>TORTA DE CHOCOLATE</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$21.0000</b></p> <!--Se define otro tipo de letra para los numero para que se entiendan un poco mejor-->
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Torta de chocolate', 21000, this)">+</div></div>
                 </div>
                 <div class="cajapostre">
                     <img src="imagenescarta/CREEME.jpg" alt="Crème Brûlée">
                     <p id="bordeblanco"><b>Crème Brûlée</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$22.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Crème Brûlée', 22000, this)">+</div></div>
                 </div>
                 <div class="cajapostre">
                     <img src="imagenescarta/crema_catalana.jpg" alt="crema_catalana">
                     <p id="bordeblanco"><b>CREMA CATALANA</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$26.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Crema catalana', 26000, this)">+</div></div>
                 </div>
                 <div class="cajapostre">
                     <img src="imagenescarta/CHEESCAKE.jpg" alt="CHEESECAKE">
                     <p id="bordeblanco"><b>CHEESECAKE</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$25.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Cheescake', 25000, this)">+</div></div>
                 </div>
                 <div class="cajapostre">
                     <img src="imagenescarta/MOUSSE DE CHOCOLATE.jpg" alt="MOUSSE DE CHOCOLATE">
                     <p id="bordeblanco"><b>MOUSSE DE CHOCOLATE</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$26.000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Mousse de chocolate', 26000, this)">+</div></div>
                 </div>
                 <div class="cajapostre">
                     <img src="imagenescarta/TIRAMISU.jpg" alt="TIRAMISU">
                     <p id="bordeblanco"><b>TIRAMISÚ</b></p>
-                    <p class="roboto-medium" id="bordeblanco"><b>400 gr</b></p>
                     <p class="roboto-medium" id="bordeblanco"><b>$22.0000</b></p>
+                    <div class="contenedor2"><input type="number" class="in" id="cantidadproducto"><div class="botoncompra" onclick="agregarAlCarrito('Tiramisu', 22000, this)">+</div></div>
                 </div>  
             </div>
-            <a href="opciones.html"><h1 class="back">atras</h1></a> <!-- simplemente para regresar a la parte de opciones por si la persona quier ver otras cosas del menu o abrir conocenos-->
-        </div>
+            <!-- Ícono del carrito -->
+            <div id="carritoIcono" onclick="mostrarCarrito()">
+                🛒
+            </div>
+
+            <div id="carritoPopup" class="popup" onclick="cerrarCarrito()">
+                <div class="popup-content" onclick="event.stopPropagation();"> <!-- Detiene el evento de cierre al hacer clic en el contenido -->
+                    <span class="close" onclick="cerrarCarrito()">&times;</span>
+                    <h2>Carrito de Compras</h2>
+                    <div id="carritoContenido">
+                        <!-- Productos del carrito se mostrarán aquí -->
+                    </div>
+                </div>
+            </div>
+            
+            
+        <a href="opciones.html"><h1 class="back">atras</h1></a>     <!-- simplemente para regresar a la parte de opciones por si la persona quier ver otras cosas del menu o abrir conocenos-->
+        
     </div>
-    
+</div>
+    <script src="carrito.js"></script>
 </body>
 </html>
