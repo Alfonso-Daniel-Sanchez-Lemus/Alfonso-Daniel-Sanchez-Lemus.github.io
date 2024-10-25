@@ -45,14 +45,16 @@
 /* opcion de incio o registro */
 
 .botoninore{
+    display: flex;
     background-color: #a79f748f;
     color: white;
     border-radius: 10px;
+    border: #000;
     width: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: block;
+    
     
 }
 .botoninore:hover{
