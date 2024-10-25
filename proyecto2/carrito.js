@@ -17,7 +17,7 @@ function agregarAlCarrito(nombre, precio, boton) {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 
     actualizarCarrito();
-    document.getElementById("cantidadproducto").value = 0
+
 }
 
 // Función para actualizar el carrito y mostrar la suma total
