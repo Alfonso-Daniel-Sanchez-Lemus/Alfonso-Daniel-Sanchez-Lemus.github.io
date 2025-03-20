@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejemplos Visuales de HTML y CSS</title>
+  <title>Documento Completo de HTML y CSS</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -29,18 +29,29 @@
     .section {
       margin-bottom: 40px;
     }
+    .info {
+      background-color: #e7f3fe;
+      border-left: 6px solid #2196F3;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Ejemplos Visuales de HTML y CSS</h1>
-  <p>Este documento muestra cómo funciona cada parte del HTML y CSS junto con su visualización en la página.</p>
+  <h1>Documento Completo de HTML y CSS</h1>
+  <p>En este documento se explican los elementos básicos de HTML y CSS, incluyendo ejemplos de listas, formularios y tablas. Cada sección muestra el código y cómo se ve en la página.</p>
 
   <!-- Sección: Estructura Básica de HTML -->
   <div class="section">
     <h2>1. Estructura Básica de HTML</h2>
-    <p>
-      Esta es la estructura mínima de un documento HTML. La etiqueta <code>&lt;!DOCTYPE html&gt;</code> indica que se utiliza HTML5.
-    </p>
+    <div class="info">
+      <p><strong>&lt;html&gt;:</strong> Es el contenedor raíz de todo el documento.</p>
+      <p><strong>&lt;head&gt;:</strong> Contiene metadatos (información sobre el documento) como el título y enlaces a archivos CSS o scripts.</p>
+      <p><strong>&lt;title&gt;:</strong> Define el título que aparece en la pestaña del navegador.</p>
+      <p><strong>&lt;body&gt;:</strong> Contiene el contenido visible, como encabezados, párrafos, imágenes, etc.</p>
+      <p><strong>&lt;h1&gt;:</strong> Representa el encabezado principal, que generalmente se muestra con un tamaño de fuente grande y en negrita.</p>
+      <p><strong>&lt;p&gt;:</strong> Define un párrafo de texto.</p>
+    </div>
     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -60,12 +71,50 @@
     </div>
   </div>
 
+  <!-- Sección: Listas -->
+  <div class="section">
+    <h2>2. Listas</h2>
+    <p>HTML permite crear listas ordenadas y no ordenadas para organizar información.</p>
+    
+    <h3>Lista No Ordenada (<code>&lt;ul&gt;</code>)</h3>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+  &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <h4>Visualización:</h4>
+    <div class="demo">
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </div>
+    
+    <h3>Lista Ordenada (<code>&lt;ol&gt;</code>)</h3>
+    <pre>
+&lt;ol&gt;
+  &lt;li&gt;Primer elemento&lt;/li&gt;
+  &lt;li&gt;Segundo elemento&lt;/li&gt;
+  &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    <h4>Visualización:</h4>
+    <div class="demo">
+      <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+      </ol>
+    </div>
+  </div>
+
   <!-- Sección: Formularios -->
   <div class="section">
-    <h2>2. Formularios</h2>
-    <p>
-      El siguiente ejemplo muestra un formulario simple. La etiqueta <code>&lt;form&gt;</code> contiene los elementos del formulario. La etiqueta <code>&lt;label&gt;</code> se asocia al campo de entrada (<code>&lt;input&gt;</code>) mediante el atributo <code>for</code>.
-    </p>
+    <h2>3. Formularios</h2>
+    <p>Los formularios permiten a los usuarios ingresar datos que pueden ser enviados y procesados en el servidor.</p>
     <pre>
 &lt;form action="/submit"&gt;
   &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
@@ -75,7 +124,7 @@
     </pre>
     <h3>Visualización:</h3>
     <div class="demo">
-      <!-- Usamos onsubmit para evitar que se recargue la página -->
+      <!-- Usamos onsubmit para evitar la recarga de la página -->
       <form action="/submit" onsubmit="alert('Formulario enviado'); return false;">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
@@ -86,10 +135,8 @@
 
   <!-- Sección: Tablas -->
   <div class="section">
-    <h2>3. Tablas</h2>
-    <p>
-      Las tablas se utilizan para organizar datos en filas y columnas. La etiqueta <code>&lt;table&gt;</code> define la tabla, <code>&lt;tr&gt;</code> define cada fila, <code>&lt;th&gt;</code> define los encabezados y <code>&lt;td&gt;</code> los datos.
-    </p>
+    <h2>4. Tablas</h2>
+    <p>Las tablas se utilizan para organizar datos en filas y columnas.</p>
     <pre>
 &lt;table border="1"&gt;
   &lt;tr&gt;
@@ -127,10 +174,8 @@
 
   <!-- Sección: CSS Básico -->
   <div class="section">
-    <h2>4. CSS Básico</h2>
-    <p>
-      CSS (Cascading Style Sheets) se utiliza para dar estilo a los elementos HTML. En este ejemplo se muestra cómo aplicar estilos de forma interna.
-    </p>
+    <h2>5. CSS Básico</h2>
+    <p>CSS (Cascading Style Sheets) se utiliza para dar estilo a los elementos HTML. A continuación se muestra un ejemplo de CSS interno.</p>
     <pre>
 &lt;style&gt;
   body {
@@ -146,6 +191,29 @@
       <h1 style="color: blue;">Encabezado con CSS</h1>
       <p>El fondo de esta sección es gris claro y el encabezado es azul.</p>
     </div>
+  </div>
+  
+  <!-- Sección: Resumen de Elementos HTML Básicos -->
+  <div class="section">
+    <h2>6. Resumen de Elementos HTML Básicos</h2>
+    <div class="info">
+      <p><strong>&lt;html&gt;:</strong> Contenedor raíz de todo el documento.</p>
+      <p><strong>&lt;head&gt;:</strong> Contiene metadatos y enlaces a recursos externos (CSS, scripts, etc.).</p>
+      <p><strong>&lt;title&gt;:</strong> Define el título de la página (lo que se muestra en la pestaña del navegador).</p>
+      <p><strong>&lt;body&gt;:</strong> Contiene el contenido visible de la página (textos, imágenes, formularios, tablas, etc.).</p>
+      <p><strong>&lt;h1&gt;:</strong> Encabezado principal, generalmente se muestra con una fuente grande y en negrita.</p>
+      <p><strong>&lt;p&gt;:</strong> Párrafo de texto.</p>
+      <p><strong>&lt;ul&gt; y &lt;ol&gt;:</strong> Listas no ordenadas y ordenadas, respectivamente.</p>
+      <p><strong>&lt;li&gt;:</strong> Elemento de una lista.</p>
+      <p><strong>&lt;form&gt;:</strong> Define un formulario.</p>
+      <p><strong>&lt;label&gt;:</strong> Etiqueta descriptiva para un campo del formulario.</p>
+      <p><strong>&lt;input&gt;:</strong> Campo de entrada (por ejemplo, de texto, botón de envío, etc.).</p>
+      <p><strong>&lt;table&gt;:</strong> Define una tabla.</p>
+      <p><strong>&lt;tr&gt;:</strong> Define una fila en una tabla.</p>
+      <p><strong>&lt;th&gt;:</strong> Define una celda de encabezado en una tabla.</p>
+      <p><strong>&lt;td&gt;:</strong> Define una celda de datos en una tabla.</p>
+    </div>
+    <p>Con estos elementos básicos puedes construir y estructurar cualquier página web, aplicando estilos con CSS para mejorar su apariencia.</p>
   </div>
 
 </body>
