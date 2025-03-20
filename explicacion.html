@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos Visuales de HTML y CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      background-color: #fafafa;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+    .demo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fff;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplos Visuales de HTML y CSS</h1>
+  <p>Este documento muestra cómo funciona cada parte del HTML y CSS junto con su visualización en la página.</p>
+
+  <!-- Sección: Estructura Básica de HTML -->
+  <div class="section">
+    <h2>1. Estructura Básica de HTML</h2>
+    <p>
+      Esta es la estructura mínima de un documento HTML. La etiqueta <code>&lt;!DOCTYPE html&gt;</code> indica que se utiliza HTML5.
+    </p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <h1>Encabezado Principal</h1>
+      <p>Este es un párrafo de ejemplo.</p>
+    </div>
+  </div>
+
+  <!-- Sección: Formularios -->
+  <div class="section">
+    <h2>2. Formularios</h2>
+    <p>
+      El siguiente ejemplo muestra un formulario simple. La etiqueta <code>&lt;form&gt;</code> contiene los elementos del formulario. La etiqueta <code>&lt;label&gt;</code> se asocia al campo de entrada (<code>&lt;input&gt;</code>) mediante el atributo <code>for</code>.
+    </p>
+    <pre>
+&lt;form action="/submit"&gt;
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre"&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <!-- Usamos onsubmit para evitar que se recargue la página -->
+      <form action="/submit" onsubmit="alert('Formulario enviado'); return false;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+
+  <!-- Sección: Tablas -->
+  <div class="section">
+    <h2>3. Tablas</h2>
+    <p>
+      Las tablas se utilizan para organizar datos en filas y columnas. La etiqueta <code>&lt;table&gt;</code> define la tabla, <code>&lt;tr&gt;</code> define cada fila, <code>&lt;th&gt;</code> define los encabezados y <code>&lt;td&gt;</code> los datos.
+    </p>
+    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;
+    &lt;th&gt;Edad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;
+    &lt;td&gt;23&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Juan&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo">
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>30</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Sección: CSS Básico -->
+  <div class="section">
+    <h2>4. CSS Básico</h2>
+    <p>
+      CSS (Cascading Style Sheets) se utiliza para dar estilo a los elementos HTML. En este ejemplo se muestra cómo aplicar estilos de forma interna.
+    </p>
+    <pre>
+&lt;style&gt;
+  body {
+    background-color: lightgray;
+  }
+  h1 {
+    color: blue;
+  }
+&lt;/style&gt;
+    </pre>
+    <h3>Visualización:</h3>
+    <div class="demo" style="background-color: lightgray; padding: 20px;">
+      <h1 style="color: blue;">Encabezado con CSS</h1>
+      <p>El fondo de esta sección es gris claro y el encabezado es azul.</p>
+    </div>
+  </div>
+
+</body>
+</html>
